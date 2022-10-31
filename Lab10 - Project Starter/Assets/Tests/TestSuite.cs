@@ -90,6 +90,21 @@ namespace Tests
             Assert.AreEqual(result, 5);
 
         }
+        [UnityTest]
+        public IEnumerator TestUnityPow()
+        {
+            yield return null;
+
+            result = Calculator.CalculatePair(2, 3, "^");
+            Assert.AreEqual(result, 8);
+        }
+        [Test]
+        public void TestPow()
+        {
+            result = Calculator.CalculatePair(2, 3, "^");
+            Assert.AreEqual(result, 8);
+
+        }
 
 
 
